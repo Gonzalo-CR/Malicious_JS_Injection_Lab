@@ -23,8 +23,14 @@ WEBHOOK_URL=https://webhook.site/TU-UUID-AQUI
 1. Ejecuta el servidor local:
     - npm install
     - npm start
-2. Abre `http://localhost:3000` en tu navegador.
-3.  Haz clic en el botón: se hará una solicitud fetch al proxy backend, que enviará la información robada a tu Webhook sin exponer la URL real.
+2. Abre `http://localhost:3000` en tu navegador. 
+Abre la consola del navegador e ingresa la siguiente cookie: 
+
+     ```document.cookie = "sessionid=abc123; path=/";``` 
+
+    Esto creará una cookie llamada sessionid con valor abc123 para tu servidor local.
+
+3.  Recarga la página y zaz clic en el botón: se hará una solicitud fetch al proxy backend, que enviará la información robada a tu Webhook.
 4. En [Webhook.site](https://webhook.site) verás la cookie capturada.
 
 ## 🚩 Qué se demuestra
@@ -32,6 +38,10 @@ WEBHOOK_URL=https://webhook.site/TU-UUID-AQUI
 - Inyección oculta dentro de scripts legítimos.
 - Robo de `document.cookie`.
 - Ejecución automática del payload malicioso.
+
+    ### Ejemplo: 
+
+    ![Caso ejemplo](img/ejemplo.png)
 
 ## 🔒 Contramedidas recomendadas
 
