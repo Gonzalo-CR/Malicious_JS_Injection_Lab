@@ -52,4 +52,6 @@ Abre la consola del navegador e ingresa la siguiente cookie:
 
 **¡Solo para uso educativo!**
 
+### [Ver DeepWiki](https://deepwiki.com/Gonzalo-CR/Malicious_JS_Injection_Lab) 
+
 
