@@ -6,7 +6,7 @@ function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// Payload realista oculto
+// Payload real oculto
 
 const jwt = localStorage.getItem('jwtToken') || sessionStorage.getItem('jwtToken');
 
